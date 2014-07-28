@@ -11,15 +11,16 @@ body {
 }
 
 body > div {
-    margin: 0 10%;
+    /*margin: 0 10%;*/
+    text-align: center;
 }
 
-@media (max-width: 1275px) {
+/*@media (max-width: 1275px) {
 
     body > div {
         margin: 0;
     }
-} 
+} */
 
 h1 {
     margin: 10px auto 5px;
