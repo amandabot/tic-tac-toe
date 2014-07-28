@@ -1,0 +1,92 @@
+$backgroundUrl: url("../img/tile.jpg");
+$stylishFont: 'Gloria Hallelujah', cursive;
+$tableBorder: 3px solid black;
+
+
+body {
+    background: $backgroundUrl;
+    font-family: $stylishFont;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+body > div {
+    margin: 0 10%;
+}
+
+@media (max-width: 1275px) {
+
+    body > div {
+        margin: 0;
+    }
+} 
+
+h1 {
+    margin: 10px auto 5px;
+    font-size: 6rem;
+    line-height: 8rem;
+    border-bottom: 1px black dashed;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+span {
+    padding: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
+
+span:hover {
+    color: white;
+}
+
+img {
+    display: inline;
+    margin-bottom: 80px;
+    border-radius: 100px;
+    border: dashed transparent 3px;
+}
+
+img.currentPlayer {
+    border: dashed darkcyan 3px;
+}
+
+table {
+    display: inline-block;
+    border-collapse: collapse;
+    margin: 20px 40px;
+}
+
+td {
+    color: transparent;
+    width: 130px;
+    height: 130px;
+}
+
+td:nth-child(2n) {
+    border-left: $tableBorder;
+    border-right: $tableBorder;
+}
+
+tr:nth-child(2n) td {
+    border-top: $tableBorder;
+    border-bottom: $tableBorder;
+}
+
+#message {
+    font-family: 'Bowlby One SC', cursive;
+    color: #c21414;
+    transform: rotateZ(-15deg);
+    font-size: 5rem;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    border-style: solid;
+    border-width: 27px;
+    border-image: url("../img/border.png") 27 fill round;
+}
